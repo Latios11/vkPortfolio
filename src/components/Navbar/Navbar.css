@@ -30,7 +30,7 @@
 }
 
 .nav-links a:hover{
-    color: aqua;
+    color: rgb(255, 220, 82);
     transform: scale(1.1)
 }
 

@@ -10,7 +10,7 @@ function Navbar() {
       <div className="nav-links">
         <a href="#Home">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <a href="#services">Projects</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
