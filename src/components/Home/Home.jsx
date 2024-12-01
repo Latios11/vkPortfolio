@@ -24,6 +24,12 @@ function Home() {
 
             Explore my work and discover how we can collaborate to elevate your digital presence!
           </div>
+          <button class="button">
+            <span class="button_lg">
+              <span class="button_sl"></span>
+              <span class="button_text">Hire Me</span>
+            </span>
+          </button>
     </div>
   )
 }
