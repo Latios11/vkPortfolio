@@ -195,16 +195,52 @@
   background: rgb(228, 183, 0);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2rem;
 }
 .edu-header{
   font-size: 50px;
 }
+
 .edu-content{
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
 }
+
 .edu{
-  
+  width: 60vw;
+  overflow: hidden;
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: rgb(255, 235, 83);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: transform .5s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.edu-course{
+  display: flex;
+  gap: 10rem;
+}
+.duration{
+  position: absolute;
+  border-radius: 0 0 0 10px;
+  padding: 7px;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+  color: #fff;
+  background-color: #000000;
+}
+.edu-degree{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.edu:hover{
+  transform: scale(1.2);
 }
