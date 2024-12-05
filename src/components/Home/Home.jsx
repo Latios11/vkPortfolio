@@ -3,6 +3,7 @@ import "./Home.css"
 
 function Home() {
   return (
+    <>
     <div className='hero'>
         <div className="hero-content">
           <div className="hero-header">
@@ -31,6 +32,37 @@ function Home() {
             </span>
           </button>
     </div>
+    
+    <div className="education">
+      <h1 className='edu-header'>Education</h1>
+
+      <div className="edu-content">
+        <div className="edu">
+          <div className="course">Master of Computer Applications</div>
+          <div className="edu-from">University of Allahabad</div>
+          <div className="duration">2022 - 2024</div>
+        </div>
+        <div className="edu">
+          <div className="course">Bachelor of Science</div>
+          <div className="edu-from">Sri Ganesh Rai Snatokottar Mahavidyalaya</div>
+          <div className="duration">2019 - 2022</div>
+        </div>
+        <div className="edu">
+          <div className="course">Intermediate</div>
+          <div className="edu-from">Kendriya vidyalaya No. 2</div>
+          <div className="duration">2017 - 2018</div>
+        </div>
+        <div className="edu">
+          <div className="course">Highschool</div>
+          <div className="edu-from">Kendriya vidyalaya No. 2</div>
+          <div className="duration">2015 - 2016</div>
+        </div>
+      </div>
+      
+
+    </div>
+    
+  </>
   )
 }
 
