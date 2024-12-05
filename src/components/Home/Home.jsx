@@ -57,6 +57,7 @@ function Home() {
           <div className="edu-from">Kendriya vidyalaya No. 2</div>
           <div className="duration">2015 - 2016</div>
         </div>
+        <h2>Abhay is chutiya bahot bada</h2>
       </div>
       
 
