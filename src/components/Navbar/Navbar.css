@@ -30,13 +30,13 @@
     padding: 0;
     background: rgba(47, 44, 44, 0.533);
   }
-
-.nav-links a{
+  .nav-links a{
     text-decoration: none;
     color: white;
     padding: 0.5rem;
     transition: ease .5s;
 }
+
 
 .nav-links a:hover{
     color: rgb(255, 220, 82);
