@@ -69,3 +69,19 @@
     left: 2px;
     border-top: 2px solid rgb(127, 127, 127);
 }
+
+@media(max-width:700px){
+    .footer{
+        padding: 1.5rem;
+        height: inherit;
+    }
+    .icons{
+        flex-wrap: wrap;
+    }
+    .footer-links{
+        flex-wrap: wrap;
+    }
+    .ending{
+        display: none;
+    }
+}

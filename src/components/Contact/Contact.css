@@ -136,7 +136,7 @@
 
 /* From Uiverse.io by omriluz */ 
 .form-container {
-    width: 500px;
+    width: 100%;
     height: 500px;
     background: linear-gradient(#212121, #212121) padding-box,
                 linear-gradient(145deg, transparent 35%,#ffb300, #ff6040) border-box;
@@ -254,14 +254,29 @@
     border-color: #fff;
   }
   
+  @media(max-width:970px) {
+    .contact{
+      flex-direction: column;
+    }
+  }
   
   @media(max-width: 720px){
     .contact{
+      padding: 1rem;
         flex-direction: column;
+    }
+    .contact-header{
+      text-wrap: wrap;
     }
     .loader{
         padding-top: 0px;
         padding-bottom: 0px;
+    }
+    .form-container{
+      width: 100%;
+    }
+    .truckWrapper{
+      width: 100%;
     }
   }
   
