@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react';
-import './MyServices.css';
+import './Myservices.css';
 
 const MyServices = () => {
   const services = [
