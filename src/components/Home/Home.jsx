@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Home.css"
+import MyServices from './MyServices'
 
 function Home() {
   return (
@@ -77,10 +78,11 @@ function Home() {
           <i class="fa-solid fa-school"></i> Kendriya Vidyalaya No. 2
           </div>
         </div>
-
-      </div>
-      
+      </div> 
     </div>
+    
+    {true &&<MyServices/>}
+    
   </>
   )
 }

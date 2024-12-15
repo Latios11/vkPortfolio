@@ -40,7 +40,6 @@
     transform: scale(.1);
 }
 .hero-para{
-    max-width: 80%;
     font-weight: 500;
     color: white;
     line-height: 2em;
@@ -173,6 +172,7 @@
 
 @media (max-width:800px) {
     .hero{
+      padding: 1.5rem 2rem;
         gap: 1.5rem;
         justify-content: center;
         align-items: center;
@@ -199,7 +199,7 @@
   gap: 2rem;
 }
 .edu-header{
-  font-size: 50px;
+  font-size: 4rem;
 }
 
 .edu-content{
@@ -242,5 +242,11 @@
 }
 
 .edu:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
+@media (max-width:400px) {
+  .education{
+    padding: 2rem 2rem;
+  }
+}
+
