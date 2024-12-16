@@ -21,11 +21,9 @@ function Navbar() {
         <i class="fa-solid fa-x"></i>
       </div>
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
-        <NavLink to="/" >Home</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/">Home</NavLink>
         <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contact">Contact</NavLink>
-        
       </div>
     </div>
   )

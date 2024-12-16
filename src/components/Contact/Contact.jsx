@@ -1,10 +1,50 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 import "./Contact.css"
+import emailjs from '@emailjs/browser'
+import { useRef } from 'react'
+import { toast } from 'react-toastify'
 
 function Contact() {
-  return (
-    <div className='contact'>
+  const form = useRef();
 
+  const sendEmail = (e) =>{
+    e.preventDefault();
+    emailjs 
+           .sendForm('service_xp7h8fe','template_jecvwdf',form.current,{publicKey:'-ot7PZ-k3KsFr0JF5'})
+           .then(
+            () => {
+              console.log("mail sent")
+              toast.success(' Mail Sent!', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                });
+
+            },
+            (error) => {
+              console.log("Failed ....",error.text)
+              toast.error('Error sending message!', {
+                position: "top-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+                });
+            }
+          )
+  } 
+
+  return (
+
+    <div className='contact'>
       <div className="contact-body">
         <div className="contact-header">Get In Touch</div>
         <div className="content">Got a question?<br/> You may find answer in our help center. <i class="fa-solid fa-face-laugh-beam"></i></div>
@@ -141,20 +181,20 @@ h78.747C231.693,100.736,232.77,106.162,232.77,111.694z"
 
       <div className="contact-form">
           <div className="form-container">
-            <form className="form">
+            <form ref={form} onSubmit={sendEmail} className="form">
               <div className="form-group">
                 <label htmlFor="email">Email</label>
-                <input type="text" className='email' id='email' required /> 
+                <input type="email" className='email' name='user_email' id='email' required /> 
               </div>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
-                <input type="text" className='name' id='email' required /> 
+                <input type="name" className='name' name="user_name" required /> 
               </div>
               <div className="form-group">
                 <label htmlFor="textarea">Your thoughts</label>
-                <textarea className='textareas' id='textarea' cols="50" rows="50" required />
+                <textarea className='textareas' name="message" id='textarea' cols="50" rows="50" required />
               </div>
-              <button type='submit' className='form-submit-btn'>Submit</button>
+              <button type='submit' className='form-submit-btn'><span>Submit</span></button>
             </form>
           </div>
       </div>          

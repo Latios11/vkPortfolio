@@ -25,17 +25,6 @@ const MyServices = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
-    }, 5000); // Scroll every 5 seconds
-
-    return () => clearInterval(interval); // Clear interval on component unmount
-  }, [services.length]);
-
-
   return (
     <div className="my-services">
       <header className="services-header">
