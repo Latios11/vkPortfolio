@@ -35,9 +35,9 @@ function Home() {
           </button></NavLink>
     </div>
     
+    <div className="intro">
     <div className="education">
       <h1 className='edu-header'>Education</h1>
-
       <div className="edu-content">
         
         <div className="edu">
@@ -81,6 +81,23 @@ function Home() {
         </div>
       </div> 
     </div>
+    
+    <div className="skills">
+      <div className="skill-header"><span>My Skills</span></div>
+      <div className="technology">
+        <span>Web Devolopment tools</span>
+        <div className="skill-list">
+          <div className="skill"><span>Html</span><br/><i class="fa-brands fa-html5"></i></div>
+          <div className="skill"><span>CSS</span><br/><i class="fa-brands fa-css3-alt"></i></div>
+          <div className="skill"><span>Javascript</span><br/><i class="fa-brands fa-js"></i></div>
+          <div className="skill"><span>React</span><br/><i class="fa-brands fa-react"></i></div>
+          <div className="skill"><span>Django</span><br/><i class="fa-brands fa-python"></i></div>
+        </div>
+      </div>
+    </div>
+     
+    </div>
+
     
     {true &&<MyServices/>}
     

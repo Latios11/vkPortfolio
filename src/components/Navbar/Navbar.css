@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #222831;
     padding: 1rem 3rem;
-    color: white;
+    color: #EEEEEE;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -32,31 +32,28 @@
   }
   .nav-links a{
     text-decoration: none;
-    color: white;
+    color: #EEEEEE;
     padding: 0.5rem;
     transition: ease .5s;
 }
 
 
 .nav-links a:hover{
-    color: rgb(255, 220, 82);
+    color: #FFD369;
     transform: scale(1.1)
 }
 
 @media (max-width:800px) {
-    .navbar{
-        position: relative;
-    }
     .nav-links{
         display: none;
     }
     .menu-icon{
         display: block;
-        color: rgb(255, 255, 255);
+        color: #EEEEEE;
         transform: scale(1.5);
     }
     .nav-links{
-        background: rgb(29, 27, 27);
+        background: #393E46;
         position: absolute;
         width: 20%;
         align-items: center;

@@ -7,16 +7,6 @@
     background-size: cover;
 }
 
-.message{
-  display: none;
-  padding: 1rem 1rem;
-  background-color: #ff6040;
-  color: white;
-
-}
-.message.active{
-  display: block;
-}
 
 .contact-body{
     display: flex;
