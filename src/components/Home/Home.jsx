@@ -94,6 +94,22 @@ function Home() {
           <div className="skill"><span>Django</span><br/><i class="fa-brands fa-python"></i></div>
         </div>
       </div>
+      <div className="technology">
+        <span>Programming languages</span>
+        <div className="skill-list">
+          <div className="skill"><span>Python</span><br/><i class="fa-brands fa-python"></i></div>
+          <div className="skill"><span>C/C++</span><br/><i class="fa-solid fa-c"></i></div>
+          <div className="skill"><span>C#</span><br/><i class="fa-solid fa-laptop"></i></div>
+        </div>
+      </div>
+      <div className="technology">
+        <span>Others</span>
+        <div className="skill-list">
+          <div className="skill"><span>Photoshop</span><br/><i class="fa-solid fa-photo-film"></i></div>
+          <div className="skill"><span>Figma</span><br/><i class="fa-brands fa-figma"></i></div>
+          <div className="skill"><span>Github</span><br/><i class="fa-brands fa-github"></i></div>
+        </div>
+      </div>
     </div>
      
     </div>

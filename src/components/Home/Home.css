@@ -322,3 +322,15 @@
   transform: translateY(-180%);
 }
 
+
+@media(max-width:900px){
+  .intro{
+    flex-direction: column;
+  }
+  .edu{
+    width: 70vw;
+  }
+  .skill{
+    max-height: 16px;
+  }
+}
