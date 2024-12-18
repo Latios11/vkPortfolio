@@ -85,7 +85,7 @@ function Home() {
     <div className="skills">
       <div className="skill-header"><span>My Skills</span></div>
       <div className="technology">
-        <span>Web Devolopment tools</span>
+        <span><i class="fa-solid fa-bomb"></i>Web Devolopment tools</span>
         <div className="skill-list">
           <div className="skill"><span>Html</span><br/><i class="fa-brands fa-html5"></i></div>
           <div className="skill"><span>CSS</span><br/><i class="fa-brands fa-css3-alt"></i></div>
@@ -95,7 +95,7 @@ function Home() {
         </div>
       </div>
       <div className="technology">
-        <span>Programming languages</span>
+        <span><i class="fa-solid fa-bomb"></i>Programming languages</span>
         <div className="skill-list">
           <div className="skill"><span>Python</span><br/><i class="fa-brands fa-python"></i></div>
           <div className="skill"><span>C/C++</span><br/><i class="fa-solid fa-c"></i></div>
@@ -103,7 +103,7 @@ function Home() {
         </div>
       </div>
       <div className="technology">
-        <span>Others</span>
+        <span><i class="fa-solid fa-bomb"></i>Others</span>
         <div className="skill-list">
           <div className="skill"><span>Photoshop</span><br/><i class="fa-solid fa-photo-film"></i></div>
           <div className="skill"><span>Figma</span><br/><i class="fa-brands fa-figma"></i></div>
