@@ -8,26 +8,33 @@ function Footer() {
       <div className="follow">
       <h2 className="fheader">Follow me</h2>
         <div className="icons">
+          <a href="https://www.instagram.com/vivek_kumar_034/?hl=en" target='_blank'>
             <div className="icon-container">
-              <a href="https://www.instagram.com/vivek_kumar_034/?hl=en" target='_blank'><i class="fa-brands fa-instagram"></i></a>
+              <i class="fa-brands fa-instagram"></i>
             </div>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100009389696483" target='_blank'>
             <div className="icon-container">
-            <a href="https://www.facebook.com/profile.php?id=100009389696483" target='_blank'><i class="fa-brands fa-facebook"></i></a>
+            <i class="fa-brands fa-facebook"></i>
             </div>
+          </a>
+          <a href="https://github.com/Latios11" target='_blank'>
             <div className="icon-container">
-            <a href="https://github.com/Latios11" target='_blank'><i class="fa-brands fa-github"></i></a>
+            <i class="fa-brands fa-github"></i>
             </div>
+          </a>
+          <a href="https://www.linkedin.com/in/vivek-kumar-0b7363143/" target='_blank'>
             <div className="icon-container">
-            <a href="https://www.linkedin.com/in/vivek-kumar-0b7363143/" target='_blank'><i class="fa-brands fa-linkedin"></i></a>
+            <i class="fa-brands fa-linkedin"></i>
             </div>
+          </a>
         </div>
       </div>
       <div className="quick-links">
           <h2 className="fheader">Quick links</h2>
           <div className="footer-links">
             <NavLink to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/">Projects</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
             <NavLink to="/contact">Contact Me</NavLink>
           </div>
       </div>
