@@ -40,7 +40,8 @@ function Footer() {
       </div>
       <div className="ending">
         <p>Copyright @vivek_kumar. Made with  <i class="fa-regular fa-heart"></i> using React tools.</p>
-        </div>
+      </div>
+      <div className="cat-rest"></div>
     </div>
   )
 }

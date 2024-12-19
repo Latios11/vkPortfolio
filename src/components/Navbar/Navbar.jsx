@@ -12,7 +12,7 @@ function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        Vivek Kumar
+        <span>Vivek kumar</span>
       </div>
       <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
         <i class="fa-solid fa-bars"></i>
