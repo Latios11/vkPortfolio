@@ -4,8 +4,8 @@ import './Projects.css'
 function Projects() {
   return (
     <div className='projects'>
-      <h1>Coming soon.....</h1>
-
+      <h1>Visit my GitHub profile....</h1>
+      <div className="Git-icon"></div>
 <div class="scene">
   <div class="forest">
     <div class="tree tree1">

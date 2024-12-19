@@ -1,10 +1,12 @@
-import React from 'react'
-import './Cat.css'
+import React, { useEffect } from 'react';
+import './Cat.css';
 
 function Cat() {
-    const eye = document.querySelector('.eyes');
+  useEffect(() => {
+    const eye = document.getElementById('eyes');
+    if (!eye) return;
 
-    document.addEventListener('mousemove', (event) => {
+    const handleMouseMove = (event) => {
       const mouseX = event.clientX;
       const mouseY = event.clientY;
 
@@ -17,25 +19,36 @@ function Cat() {
       const dx = mouseX - eyeCenterX;
       const dy = mouseY - eyeCenterY;
 
-      // Move 2px in the direction of the mouse
-      const moveX = dx * 0.0037; // Adjust the movement strength (2% of the distance)
+      // Move in the direction of the mouse
+      const moveX = dx * 0.0037;
       const moveY = dy * 0.006;
 
       // Apply the movement
       eye.style.transform = `translate(${moveX}px, ${moveY}px)`;
-    });
-      
+    };
+
+    // Add mousemove event listener
+    document.addEventListener('mousemove', handleMouseMove);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      document.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []); 
+
   return (
     <div>
       <div className="canvas">
-        <div className="eyes">
-            <div className="eye"></div>
-            <div className="eye"></div>
+        <div className="eyes" id="eyes">
+          <div className="eye"></div>
+          <div className="eye"></div>
         </div>
-        <div className="cat-img"><img src='src\components\Cat\cat.png' alt="" /></div>
+        <div className="cat-img">
+          <img src="src/components/Cat/cat.png" alt="Cat" />
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Cat
+export default Cat;
