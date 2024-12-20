@@ -44,7 +44,7 @@ function Cat() {
           <div className="eye"></div>
         </div>
         <div className="cat-img">
-          <img src="./cat.png" alt="Cat" />
+          <img src="src/components/Cat/cat.png" alt="Cat" />
         </div>
       </div>
     </div>
