@@ -7,7 +7,6 @@
     background-size: cover;
 }
 
-
 .contact-body{
     display: flex;
     flex-direction: column;
@@ -22,6 +21,10 @@
 .content{
     font-size: 17px;
     line-height: 1.6rem;
+}
+.icon{
+  font-size: 2rem;
+  color: #282828;
 }
 
 

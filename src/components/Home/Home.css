@@ -319,7 +319,7 @@
   transition: transform 0.2s ease;
 }
 
-.skill i {
+.skill-icon {
   color: #e9e9e9;
   font-size: 16px;
   margin-top: 10px;
@@ -328,7 +328,7 @@
 }
 
 .skill:hover span,
-.skill:hover i {
+.skill:hover .skill-icon {
   transform: translateY(-180%);
 }
 

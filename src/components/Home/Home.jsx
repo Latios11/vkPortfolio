@@ -2,6 +2,9 @@ import React from 'react'
 import "./Home.css"
 import MyServices from './MyServices'
 import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSchool, faGraduationCap, faBomb, faC, faPhotoFilm} from '@fortawesome/free-solid-svg-icons'
+import { faPython, faReact, faJs, faCss3Alt, faHtml5, faFigma, faGithub,  } from '@fortawesome/free-brands-svg-icons'
 
 function Home() {
   return (
@@ -27,10 +30,10 @@ function Home() {
 
             Explore my work and discover how we can collaborate to elevate your digital presence!
           </div>
-          <NavLink to="/contact"><button class="button">
-            <span class="button_lg">
-              <span class="button_sl"></span>
-              <span class="button_text">Hire Me</span>
+          <NavLink to="/contact"><button className="button">
+            <span className="button_lg">
+              <span className="button_sl"></span>
+              <span className="button_text">Hire Me</span>
             </span>
           </button></NavLink>
     </div>
@@ -43,40 +46,40 @@ function Home() {
         <div className="edu">
           <div className="edu-course">
               <div className="edu-degree">Master of Computer Applications</div>
-              <div className="duration"><i class="fa-solid fa-graduation-cap"></i> 2022 - 2024</div>
+              <div className="duration"><FontAwesomeIcon icon={faGraduationCap}/> 2022 - 2024</div>
           </div>
           <div className="edu-loc">
-          <i class="fa-solid fa-school"></i> Univerity of Allahabad
+          <FontAwesomeIcon icon={faSchool}/> Univerity of Allahabad
           </div>
         </div>
 
         <div className="edu">
           <div className="edu-course">
               <div className="edu-degree">Bachelor of Science</div>
-              <div className="duration"><i class="fa-solid fa-graduation-cap"></i> 2019 - 2022</div>
+              <div className="duration"><FontAwesomeIcon icon={faGraduationCap}/> 2019 - 2022</div>
           </div>
           <div className="edu-loc">
-          <i class="fa-solid fa-school"></i> Veer Bahadur Singh Purvanchal University
+          <FontAwesomeIcon icon={faSchool}/> Veer Bahadur Singh Purvanchal University
           </div>
         </div>
 
         <div className="edu">
           <div className="edu-course">
               <div className="edu-degree">Intermediate</div>
-              <div className="duration"><i class="fa-solid fa-graduation-cap"></i> 2017 - 2018</div>
+              <div className="duration"><FontAwesomeIcon icon={faGraduationCap}/> 2017 - 2018</div>
           </div>
           <div className="edu-loc">
-          <i class="fa-solid fa-school"></i> Kendriya Vidyalaya No. 2
+          <FontAwesomeIcon icon={faSchool}/> Kendriya Vidyalaya No. 2
           </div>
         </div>
 
         <div className="edu">
           <div className="edu-course">
               <div className="edu-degree">Highschool</div>
-              <div className="duration"><i class="fa-solid fa-graduation-cap"></i> 2015 - 2016</div>
+              <div className="duration"><FontAwesomeIcon icon={faGraduationCap}/> 2015 - 2016</div>
           </div>
           <div className="edu-loc">
-          <i class="fa-solid fa-school"></i> Kendriya Vidyalaya No. 2
+          <FontAwesomeIcon icon={faSchool}/> Kendriya Vidyalaya No. 2
           </div>
         </div>
       </div> 
@@ -85,29 +88,29 @@ function Home() {
     <div className="skills">
       <div className="skill-header"><span>My Skills</span></div>
       <div className="technology">
-        <span><i class="fa-solid fa-bomb"></i>Web Devolopment tools</span>
+        <span><FontAwesomeIcon icon={faBomb}/> Web Devolopment tools</span>
         <div className="skill-list">
-          <div className="skill"><span>Html</span><br/><i class="fa-brands fa-html5"></i></div>
-          <div className="skill"><span>CSS</span><br/><i class="fa-brands fa-css3-alt"></i></div>
-          <div className="skill"><span>Javascript</span><br/><i class="fa-brands fa-js"></i></div>
-          <div className="skill"><span>React</span><br/><i class="fa-brands fa-react"></i></div>
-          <div className="skill"><span>Django</span><br/><i class="fa-brands fa-python"></i></div>
+          <div className="skill"><span>Html</span><br/><FontAwesomeIcon className='skill-icon' icon={faHtml5} /></div>
+          <div className="skill"><span>CSS</span><br/><FontAwesomeIcon className='skill-icon' icon={faCss3Alt} /></div>
+          <div className="skill"><span>Javascript</span><br/><FontAwesomeIcon className='skill-icon' icon={faJs} /></div>
+          <div className="skill"><span>React</span><br/><FontAwesomeIcon className='skill-icon' icon={faReact} /></div>
+          <div className="skill"><span>Django</span><br/><FontAwesomeIcon className='skill-icon' icon={faPython} /></div>
         </div>
       </div>
       <div className="technology">
-        <span><i class="fa-solid fa-bomb"></i>Programming languages</span>
+        <span><FontAwesomeIcon icon={faBomb}/>Programming languages</span>
         <div className="skill-list">
-          <div className="skill"><span>Python</span><br/><i class="fa-brands fa-python"></i></div>
-          <div className="skill"><span>C/C++</span><br/><i class="fa-solid fa-c"></i></div>
-          <div className="skill"><span>C#</span><br/><i class="fa-solid fa-laptop"></i></div>
+          <div className="skill"><span>Python</span><br/><FontAwesomeIcon className='skill-icon' icon={faPython}/></div>
+          <div className="skill"><span>C/C++</span><br/><FontAwesomeIcon className='skill-icon' icon={faC} /></div>
+          <div className="skill"><span>C#</span><br/><FontAwesomeIcon className='skill-icon' icon={faC}/></div>
         </div>
       </div>
       <div className="technology">
-        <span><i class="fa-solid fa-bomb"></i>Others</span>
+        <span><FontAwesomeIcon icon={faBomb}/>Others</span>
         <div className="skill-list">
-          <div className="skill"><span>Photoshop</span><br/><i class="fa-solid fa-photo-film"></i></div>
-          <div className="skill"><span>Figma</span><br/><i class="fa-brands fa-figma"></i></div>
-          <div className="skill"><span>Github</span><br/><i class="fa-brands fa-github"></i></div>
+          <div className="skill"><span>Photoshop</span><br/><FontAwesomeIcon className='skill-icon' icon={faPhotoFilm} /></div>
+          <div className="skill"><span>Figma</span><br/><FontAwesomeIcon className='skill-icon' icon={faFigma}/></div>
+          <div className="skill"><span>Github</span><br/><FontAwesomeIcon className='skill-icon' icon={faGithub} /></div>
         </div>
       </div>
     </div>

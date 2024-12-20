@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import "./Navbar.css"
 import { Link, NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -15,10 +17,10 @@ function Navbar() {
         <span>Vivek kumar</span>
       </div>
       <div className={`menu-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <i class="fa-solid fa-bars"></i>
+        <FontAwesomeIcon icon={faBars}/>
       </div>
       <div className={`close-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <i class="fa-solid fa-x"></i>
+      <FontAwesomeIcon icon={faX}/>
       </div>
       <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <NavLink to="/">Home</NavLink>
