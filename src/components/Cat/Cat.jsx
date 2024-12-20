@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './Cat.css';
+import cat from './cat.png'
 
 function Cat() {
   useEffect(() => {
@@ -44,7 +45,7 @@ function Cat() {
           <div className="eye"></div>
         </div>
         <div className="cat-img">
-          <img src="src/components/Cat/cat.png" alt="Cat" />
+          <img src={cat} alt="Cat" />
         </div>
       </div>
     </div>
