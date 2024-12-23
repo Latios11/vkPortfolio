@@ -1,0 +1,101 @@
+.hero{
+    background-color: #252d35;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin{
+    border-radius: 5px;
+    width: 30%;
+    min-width: 300px;
+    padding: 2rem 4rem;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.signin h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.signin-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.form-group label{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.form-group input{
+    display: block;
+    padding: .5rem;
+    font-size: 1rem;
+    width: 30%;
+    min-width: 300px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+.signin-form .form-group input:focus{
+    border-color: rgb(255, 0, 0);
+}
+
+
+
+.form-submit-btn {
+    margin-top: 4%;
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .form-submit-btn span {
+    position: relative;
+    display: flex;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+  
+  .form-submit-btn span:hover {
+    transition: all 0.3s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+  
+  .form-submit-btn span:not(hover) {
+    transition: all .3s;
+  }
+
+  .redirect{
+    font-size: 1rem;
+  }
+  .redirect a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(0, 110, 110);
+  }

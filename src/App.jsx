@@ -4,6 +4,8 @@ import Layout from './Layout'
 import Contact from './components/Contact/Contact'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import Projects from './components/Projects/Projects'
+import SignUp from './components/SignUp/SignUp'
+import SignIn from './components/SignIn/SignIn'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
         <Route path='' element={<Home/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='projects' element={<Projects/>}/>
+        <Route path='signup' element={<SignUp/>}/>
+        <Route path='signin' element={<SignIn/>} />
       </Route>
     )
   )
