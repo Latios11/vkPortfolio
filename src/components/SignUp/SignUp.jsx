@@ -90,7 +90,7 @@ function SignUp() {
         <button className='form-submit-btn' type='submit' ><span>Register</span></button>
       </form>
       <div className="redirect">
-      <p>Already have an account? <NavLink to='/signin'>Sign In</NavLink></p>
+      <p>Already have an account? <NavLink to='/signin'>Sign In an account</NavLink></p>
       </div>
     </div>  
   </div>
