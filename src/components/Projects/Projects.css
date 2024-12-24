@@ -76,7 +76,7 @@
   color: rgb(0, 86, 173);
 }
 
-@media(max-width:420px){
+@media(max-width:430px){
   .section{
     padding: 2rem 2rem;
   }
