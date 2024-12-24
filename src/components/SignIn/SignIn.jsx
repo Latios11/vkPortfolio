@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React,{useState, useContext} from 'react'
 import { useNavigate, NavLink } from 'react-router-dom'
 import './SignIn.css'
@@ -57,7 +56,7 @@ function SignIn() {
   }
 
   return (
-    <div className="hero-signin">
+  <div className="hero-signin">
     <div className='signin'>
        <h1>Login Here</h1>
        <form className="signin-form" onSubmit={handleLogin}>
@@ -80,34 +79,13 @@ function SignIn() {
           required/>
         </div>
         <button className='form-submit-btn' type='submit'><span>Login</span></button>
-=======
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import './SignIn.css'
-
-function SignIn() {
-  return (
-    <div className="hero">
-    <div className='signin'>
-       <h1>Login Here</h1>
-       <form className="signin-form">
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input type="password" id='password' name='password' required/>
-        </div>
-        <button className='form-submit-btn' type='submit'><span>Register</span></button>
->>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
-       </form>
-       <div className="redirect">
-        Dont have an account? <NavLink to='/signup'>Register here</NavLink>
-       </div>
+      </form>
+      <div className='redirect'>
+        <p>Don't have an account? <NavLink to='/signup'>Sign Up</NavLink></p>
+      </div>
     </div>
   </div>
-  )
+)  
 }
 
 export default SignIn

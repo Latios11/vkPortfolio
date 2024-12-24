@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React,{useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import './SignUp.css'
@@ -89,36 +88,11 @@ function SignUp() {
           required/>
         </div>
         <button className='form-submit-btn' type='submit' ><span>Register</span></button>
-=======
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import './SignUp.css'
-
-function SignUp() {
-  return (
-  <div className="hero">
-    <div className='signup'>
-       <h1>Register Here</h1>
-       <form className="signup-form">
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div className="form-group">
-          <label htmlFor="password">Password:</label>
-          <input type="password" id='password' name='password' required/>
-        </div>
-        <button className='form-submit-btn' type='submit'><span>Register</span></button>
->>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
-       </form>
-       <div className="redirect">
-        Already have an account? <NavLink to='/signin'>Register here</NavLink>
-       </div>
-    </div>
+      </form>
+      <div className="redirect">
+      <p>Already have an account? <NavLink to='/signin'>Sign In</NavLink></p>
+      </div>
+    </div>  
   </div>
   )
 }
