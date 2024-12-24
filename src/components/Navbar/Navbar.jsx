@@ -1,19 +1,28 @@
+<<<<<<< HEAD
 import React, {useState, useContext, useEffect} from 'react'
 import "./Navbar.css"
 import {UserContext} from '../UserContext' 
 import { account } from '../appwrite/auth'
+=======
+import React, {useState} from 'react'
+import "./Navbar.css"
+>>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+<<<<<<< HEAD
   const [error, setError] = useState("")
+=======
+>>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
   }
 
+<<<<<<< HEAD
   const {user, setUser} = useContext(UserContext)
 
   useEffect(() => {
@@ -41,6 +50,8 @@ function Navbar() {
     }
   }
 
+=======
+>>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
   return (
     <div className="navbar">
       <div className="navbar-logo">
@@ -58,9 +69,13 @@ function Navbar() {
         <NavLink to="/contact">Contact</NavLink>
         <NavLink to="/signup">Sign Up</NavLink>
         <NavLink to='/signin'>Sign In</NavLink>
+<<<<<<< HEAD
         {user && <button className='logout-btn' onClick={handleLogout}>logout</button>}
       </div>
       {user &&<div className="message"> <p>Welcome {user.name}</p></div>}
+=======
+      </div>
+>>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
     </div>
   )
 }

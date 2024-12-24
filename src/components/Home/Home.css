@@ -13,7 +13,10 @@
 .hero-content{
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     align-items: center;
+=======
+>>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
 }
 .hero-header{
     font-size: 50px;
@@ -36,7 +39,17 @@
     border-radius: 50%;
     position: relative;
 }
+<<<<<<< HEAD
 
+=======
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transform: scale(.1);
+}
+>>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
 .hero-para{
     font-weight: 500;
     color: #EEEEEE;

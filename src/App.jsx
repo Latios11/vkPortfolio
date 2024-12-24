@@ -6,7 +6,10 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Projects from './components/Projects/Projects'
 import SignUp from './components/SignUp/SignUp'
 import SignIn from './components/SignIn/SignIn'
+<<<<<<< HEAD
 import {UserProvider} from "./components/UserContext"
+=======
+>>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
 
 function App() {
 
@@ -22,9 +25,13 @@ function App() {
     )
   )
   return (
+<<<<<<< HEAD
     <UserProvider>
       <RouterProvider router={router} />
     </UserProvider>
+=======
+      <RouterProvider router={router} />
+>>>>>>> 5dc0c6be81e034a5d5b99e12a4bbe5baf79109c7
   )
 }
 
