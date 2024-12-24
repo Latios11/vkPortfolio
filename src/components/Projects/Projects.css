@@ -76,4 +76,26 @@
   color: rgb(0, 86, 173);
 }
 
+@media(max-width:420px){
+  .section{
+    padding: 2rem 2rem;
+  }
+  .project-card{
+    flex-direction: column;
+    height: 100%;
+  }
+  .aboutproject h2{
+    font-size: 1.5rem;
+  }
+  .aboutproject p{
+    font-size: 1rem;
+  }
+  .aboutproject h5{
+    font-size: 1rem;
+  }
+  .aboutproject a{
+    font-size: 1rem;
+  }
+}
+
 

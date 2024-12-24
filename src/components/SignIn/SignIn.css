@@ -10,7 +10,6 @@
 .signin{
     border-radius: 5px;
     width: 30%;
-    min-width: 300px;
     padding: 2rem 4rem;
     background: rgb(255, 191, 0);
     display: flex;
@@ -101,4 +100,14 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: rgb(0, 110, 110);
+  }
+
+  @media(max-width: 420px){
+    .signin{
+        width: 80%;
+    }
+    .form-group input{
+        width: 80%;
+    }
+
   }

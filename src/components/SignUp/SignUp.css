@@ -93,7 +93,7 @@
     transition: all .3s;
   }
    
-  .redirect{
+  .redirect p{
     font-size: 1rem;
     text-wrap: nowrap;
   }
@@ -102,4 +102,27 @@
     font-weight: 600;
     color: rgb(0, 110, 110);
     text-decoration: none;
+  }
+
+  @media(max-width:420px){
+    .signup{
+        width: 80%;
+        padding: 2rem 2rem;
+    }
+    .signup h1{
+        font-size: 2rem;
+    }
+    .form-group input{
+        width: 80%;
+    }
+    .form-submit-btn{
+        width: 100%;
+    }
+    .redirect p{
+      font-size: 15px;
+    }
+    .redirect p a{
+      font-size: 17px;
+    }
+
   }
