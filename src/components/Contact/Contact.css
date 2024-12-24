@@ -1,0 +1,306 @@
+.contact{
+    padding: 3rem 5rem;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    background-image: url(https://images.pexels.com/photos/5412331/pexels-photo-5412331.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+}
+
+.contact-body{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-header{
+    font-size: 4rem;
+    font-weight: 700;
+    text-wrap: nowrap;
+}
+.content{
+    font-size: 17px;
+    line-height: 1.6rem;
+}
+.icon{
+  font-size: 2rem;
+  color: #282828;
+}
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.loader {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.5);
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .truckWrapper {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    overflow-x: hidden;
+  }
+  /* truck upper body */
+  .truckBody {
+    width: 130px;
+    height: fit-content;
+    margin-bottom: 6px;
+    animation: motion 1s linear infinite;
+  }
+  /* truck suspension animation*/
+  @keyframes motion {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  /* truck's tires */
+  .truckTires {
+    width: 130px;
+    height: fit-content;
+    display: flex;
+    gap: 59px;
+    align-items: center;
+    padding: 10px 0 0 10px;
+    position: absolute;
+    bottom: 0;
+  }
+  .truckTires svg {
+    width: 24px;
+  }
+  
+  .road {
+    width: 100%;
+    height: 1.5px;
+    background-color: #282828;
+    position: relative;
+    bottom: 0;
+    align-self: flex-end;
+    border-radius: 3px;
+  }
+  .road::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    background-color: #282828;
+    right: -50%;
+    border-radius: 3px;
+    animation: roadAnimation 1.4s linear infinite;
+    border-left: 10px solid white;
+  }
+  .road::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background-color: #282828;
+    right: -65%;
+    border-radius: 3px;
+    animation: roadAnimation 1.4s linear infinite;
+    border-left: 4px solid white;
+  }
+  
+  .lampPost {
+    position: absolute;
+    bottom: 0;
+    right: -90%;
+    height: 90px;
+    animation: roadAnimation 1.4s linear infinite;
+  }
+  
+  @keyframes roadAnimation {
+    0% {
+      transform: translateX(0px);
+    }
+    100% {
+      transform: translateX(-350px);
+    }
+  }
+  
+
+
+
+/* From Uiverse.io by omriluz */ 
+.form-container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#212121, #212121) padding-box,
+                linear-gradient(145deg, transparent 35%,#ffb300, #ff6040) border-box;
+    border: 2px solid transparent;
+    font-size: 14px;
+    padding: 2rem 2rem;
+    font-family: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-size: 200% 100%;
+    animation: gradient 5s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+  .form-container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .form-container .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #717171;
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+  
+  .form-container .form-group input {
+    width: 94%;
+    padding: .7rem .7rem;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+  }
+  
+  .textareas{
+    padding: 12px 16px;
+    border-radius: 8px;
+    color: #fff;
+    font-family: inherit;
+    background-color: transparent;
+    border: 1px solid #414141;
+    resize: none;
+    height: 150px;
+    vertical-align: top;
+    text-align: left;
+    overflow: auto;
+}
+  
+  .form-container .form-group input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .form-container .form-group input:focus {
+    outline: none;
+    border-color: #ffb300;
+  }
+  
+  .form-container .form-group textarea:focus {
+    outline: none;
+    border-color: #ffb300;
+  }
+  
+  /* From Uiverse.io by Web-Potato */ 
+.form-submit-btn {
+  margin-left: 30%;
+  padding: 0.1em 0.25em;
+  width: 13em;
+  height: 4.2em;
+  background-color: #212121;
+  border: 0.08em solid #fff;
+  border-radius: 0.3em;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.form-submit-btn span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0.4em;
+  width: 8.25em;
+  height: 2.5em;
+  background-color: #212121;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  color: #fff;
+  border: 0.08em solid #fff;
+  box-shadow: 0 0.4em 0.1em 0.019em #fff;
+}
+
+.form-submit-btn span:hover {
+  transition: all 0.3s;
+  transform: translate(0, 0.4em);
+  box-shadow: 0 0 0 0 #fff;
+}
+
+.form-submit-btn span:not(hover) {
+  transition: all .3s;
+}
+
+@media(max-width:450px) {
+  .form-submit-btn{
+    margin-left: 15%;
+  }
+}
+
+
+  
+  @media(max-width:970px) {
+    .contact{
+      flex-direction: column;
+    }
+  }
+  
+  @media(max-width: 720px){
+    .contact{
+      padding: 1rem;
+        flex-direction: column;
+    }
+    .contact-header{
+      text-wrap: wrap;
+    }
+    .loader{
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .form-container{
+      width: 100%;
+    }
+    .truckWrapper{
+      width: 100%;
+    }
+  }
+  
