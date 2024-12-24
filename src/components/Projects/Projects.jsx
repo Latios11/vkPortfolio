@@ -1,125 +1,49 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Projects.css'
+import { Link } from 'react-router-dom'
+import localimg from './images/localimg.png'
+import chatimg from './images/chatimg.png'
 
 function Projects() {
+
+  const projects = [
+    {
+      id: 1,
+      name: 'LocalFixers - Service provider website',
+      description: 'LocalFixers is a dynamic platform designed to connect users with trusted local service providers. Whether you need a plumber, electrician, handyman, or other professionals, LocalFixers simplifies the search by offering a curated list of skilled experts in your area. With user-friendly features and reliable reviews, it ensures a seamless experience for finding and hiring the right professional for your needs.',
+      image: localimg, 
+      tech:'Django, python, html, css, javascript',
+      url: '', 
+    },
+    {
+      id: 2,
+      name: 'AI Chat Application',
+      description: 'Meet Gemini, an intelligent and responsive chatbot built with React, designed to deliver real-time assistance and personalized interactions. Powered by advanced AI capabilities, Gemini seamlessly integrates into websites and applications, offering intuitive conversations, answering queries, and providing support. Its sleek React-based UI ensures smooth performance and adaptability.',
+      image: chatimg,
+      tech:'Vite React, Gemini Api, css', 
+      url: 'https://vk11-chatbot.netlify.app',
+    },
+  ];
+
   return (
-    <div className='projects'>
-      <h1>Visit my GitHub profile....</h1>
-      <div className="Git-icon"></div>
-<div className="scene">
-  <div className="forest">
-    <div className="tree tree1">
-      <div className="branch branch-top"></div>
-      <div className="branch branch-middle"></div>
-    </div>
-
-    <div className="tree tree2">
-      <div className="branch branch-top"></div>
-      <div className="branch branch-middle"></div>
-      <div className="branch branch-bottom"></div>
-    </div>
-
-    <div className="tree tree3">
-      <div className="branch branch-top"></div>
-      <div className="branch branch-middle"></div>
-      <div className="branch branch-bottom"></div>
-    </div>
-
-    <div className="tree tree4">
-      <div className="branch branch-top"></div>
-      <div className="branch branch-middle"></div>
-      <div className="branch branch-bottom"></div>
-    </div>
-
-    <div className="tree tree5">
-      <div className="branch branch-top"></div>
-      <div className="branch branch-middle"></div>
-      <div className="branch branch-bottom"></div>
-    </div>
-
-    <div className="tree tree6">
-      <div className="branch branch-top"></div>
-      <div className="branch branch-middle"></div>
-      <div className="branch branch-bottom"></div>
-    </div>
-
-    <div className="tree tree7">
-      <div className="branch branch-top"></div>
-      <div className="branch branch-middle"></div>
-      <div className="branch branch-bottom"></div>
-    </div>
-  </div>
-  
-  <div className="tent">
-      <div className="roof"></div>
-      <div className="roof-border-left">
-        <div className="roof-border roof-border1"></div>
-        <div className="roof-border roof-border2"></div>
-        <div className="roof-border roof-border3"></div>
-      </div>
-      <div className="entrance">
-        <div className="door left-door">
-          <div className="left-door-inner"></div>
-        </div>
-        <div className="door right-door">
-          <div className="right-door-inner"></div>
-        </div>
+    <>
+    <div className="section">
+      <div className="projects-header"><span>Projects</span></div>
+      <div className="projects">
+        {projects.map((project) => (
+          <div key={project.id} className="project-card">
+            <div className="img-container"><img src={project.image} alt={project.name} className="project-image" /></div>
+            <div className="aboutproject">
+              <h2>{project.name}</h2>
+              <p>{project.description}</p>
+              <h5>Technology used: {project.tech} </h5>
+              <a href={project.url} target='_blank'><span>!! Click me to visit !!</span></a>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
-
-  <div className="floor">
-      <div className="ground ground1"></div>
-      <div className="ground ground2"></div>
-    </div>
-  
-  <div className="fireplace">
-    <div className="support"></div>
-    <div className="support"></div>
-    <div className="bar"></div>
-    <div className="hanger"></div>
-    <div className="smoke"></div>
-    <div className="pan"></div>
-    <div className="fire">
-      <div className="line line1">
-        <div className="particle particle1"></div>
-        <div className="particle particle2"></div>
-        <div className="particle particle3"></div>
-        <div className="particle particle4"></div>
-      </div>
-      <div className="line line2">
-        <div className="particle particle1"></div>
-        <div className="particle particle2"></div>
-        <div className="particle particle3"></div>
-        <div className="particle particle4"></div>
-      </div>
-      <div className="line line3">
-        <div className="particle particle1"></div>
-        <div className="particle particle2"></div>
-        <div className="particle particle3"></div>
-        <div className="particle particle4"></div>
-      </div>
-    </div>
-  </div>
-  
-  <div className="time-wrapper">
-    <div className="time">
-      <div className="day"></div>
-      <div className="night">
-        <div className="moon"></div>
-        <div className="star star1 star-big"></div>
-        <div className="star star2 star-big"></div>
-        <div className="star star3 star-big"></div>
-        <div className="star star4"></div>
-        <div className="star star5"></div>
-        <div className="star star6"></div>
-        <div className="star star7"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-</div>
+    </>
   )
 }
 
