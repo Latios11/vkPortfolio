@@ -36,7 +36,7 @@ function Projects() {
             <div className="aboutproject">
               <h2>{project.name}</h2>
               <p>{project.description}</p>
-              <h5>Technology used: {project.tech} </h5>
+              <h5>Tools used: {project.tech} </h5>
               <a href={project.url} target='_blank'><span>!! Click me to visit !!</span></a>
             </div>
           </div>
