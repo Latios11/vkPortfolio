@@ -13,7 +13,7 @@ function Projects() {
       description: 'LocalFixers is a dynamic platform designed to connect users with trusted local service providers. Whether you need a plumber, electrician, handyman, or other professionals, LocalFixers simplifies the search by offering a curated list of skilled experts in your area. With user-friendly features and reliable reviews, it ensures a seamless experience for finding and hiring the right professional for your needs.',
       image: localimg, 
       tech:'Django, python, html, css, javascript',
-      url: '', 
+      url: 'https://vk11-localfixers.onrender.com/', 
     },
     {
       id: 2,
