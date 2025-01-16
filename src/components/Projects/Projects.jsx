@@ -3,6 +3,7 @@ import './Projects.css'
 import { Link } from 'react-router-dom'
 import localimg from './images/localimg.png'
 import chatimg from './images/chatimg.png'
+import playerimg from './images/playerimg.png'
 
 function Projects() {
 
@@ -22,6 +23,14 @@ function Projects() {
       image: chatimg,
       tech:'Vite React, Gemini Api, css', 
       url: 'https://vk11-chatbot.netlify.app',
+    },
+    {
+      id: 3,
+      name: 'Music Player',
+      description: 'This is a simple music player app built using React. It allows user to play music ads free. Just search and enjoy your favorite music. **Important** : To use this app you need to authorize your spotify account. Contact me for more details.',
+      image: playerimg,
+      tech:'Vite React, Spotify Api, css', 
+      url: 'https://vk11-musicplayer.netlify.app',
     },
   ];
 
